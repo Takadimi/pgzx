@@ -1,6 +1,7 @@
 const std = @import("std");
 
 const pg = @cImport({
+    @cInclude("postgres.h");
     @cInclude("c.h");
     @cInclude("nodes/nodes.h");
 });
